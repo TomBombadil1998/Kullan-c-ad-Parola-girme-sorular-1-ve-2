@@ -1,0 +1,82 @@
+
+//1.soru
+namespace _7_Örnek 
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int yanliss = 0;
+            for (int i = 0; i < 5; i++)
+            {
+
+                Console.WriteLine("Kullanıcı adı ve parolayı aralarında boşluk bırakarak giriniz");
+                string num = Convert.ToString(Console.ReadLine());
+
+                if (num != "admin 123")
+                {
+                    Console.WriteLine("Yanlış bilgi girdiniz, lütfen tekrardan kullanıcı adı/şifre giriniz");
+                    i--;
+                    yanliss++;
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Hoşgeldin Admin");
+                    break;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+
+
+
+//2.soru
+namespace _7_Örnek 
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int yanliss = 0;
+            for (int i = 0; i < 5; i++)
+            {
+
+                Console.WriteLine("Kullanıcı adı ve parolayı aralarında boşluk bırakarak giriniz");
+                string num = Convert.ToString(Console.ReadLine());
+
+                if (num != "admin 123")
+                {
+                    Console.WriteLine("Yanlış bilgi girdiniz, lütfen tekrardan kullanıcı adı/şifre giriniz");
+                    i--;
+                    yanliss++;
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Hoşgeldin Admin");
+                    break;
+                }
+
+
+                if (yanliss == 3)
+                {
+                    Console.WriteLine("3 defa yanlış bilgi girdiğiniz için program sonlandı");
+                    return;
+                }
+
+            }
+        }
+    }
+}
